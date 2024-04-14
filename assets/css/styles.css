@@ -41,33 +41,33 @@ img {
 }
 
 h1 {
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     display: flex;
-    font-size: 2rem;
+    justify-content: center;
+    font-size: 3em;
+    margin-inline: 1rem;
+    padding-block: 5rem;
     font-weight: 500;
     color: hsl(0, 0%, 100%);
 }
 
-h2 {
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    font-size: 2rem;
-    font-weight: 500;
+p {
+    display: inline;
+    font-size: 20px;
+    line-height: 1.5;
     color: hsl(0, 0%, 100%);
+    margin-inline: 1rem;
+    margin-top: -20px;
+    padding-block: .05rem;
+    font-family: var(--body-font);
 }
 
 /*Card*/
 .container {
     display: grid;
-    place-items: center;
-    margin-inline: 1.5rem;
-    padding-block: 5rem;
+    text-align: center;
+    place-items: start;
+    margin-inline: 1rem;
+    padding-block: 10rem;
 }
 
 .card_container {
@@ -82,7 +82,7 @@ h2 {
 
 .card_img {
     width: 500px;
-    border-radius: 1.5rem;
+    border-radius: .5rem;
 }
 
 .card_data {
@@ -101,7 +101,7 @@ h2 {
 
 }
 
-.car_description {
+.card_description {
     display: block;
     font-size: var(--small-font-size);
     margin-bottom: .25rem;
@@ -153,6 +153,44 @@ h2 {
 .card_article:not(:hover) .card_data{
     animation: remove-data 1s forwards;
 }
+
+  /*Letter Animation*/
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateX(-50%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .word {
+    display: inline-block;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards; /* Speed up the animation by reducing the duration */
+  }
+  
+  .letter {
+    display: inline-block; /* Ensures that letters within a word are not broken apart */
+  }
+  
+  @keyframes fadeInTopToBottom {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  h1 {
+    animation: fadeInTopToBottom 1s ease-out forwards;
+  }  
+  
 /*Card Animation*/
 @keyframes show-data {
     50% {
@@ -199,9 +237,10 @@ h2 {
     }
     
     .card_data {
-        width: 250px;
+        width: 316px;
         padding: 1rem;
     }
+
 }
 
 /*For medium devices*/
@@ -216,7 +255,7 @@ h2 {
 /*For large devices*/
 @media screen and (min-width: 1120px){
     h1, h2 {
-        margin-bottom: 0.5em; /* adjust as needed */
+        margin-bottom: 3rem; /* adjust as needed */
     }
     
     .container {
@@ -235,5 +274,4 @@ h2 {
         width: 316px;
         padding-inline: 2.5rem;
     }
-    
 }
