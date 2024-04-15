@@ -1,6 +1,6 @@
 # Carolina | Puerto Rico
 
-Followed a tutorial ## [Youtube Video](https://youtu.be/Q8BamnhOmWc) by [Bedimcode](https://www.youtube.com/@Bedimcode) this page.
+Followed a tutorial [Youtube Video](https://youtu.be/Q8BamnhOmWc) by [Bedimcode](https://www.youtube.com/@Bedimcode) this page.
 
 - CSS Card Hover Effects | HTML & CSS
 - Contains AI Generated images on the card.
