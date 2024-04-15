@@ -45,7 +45,8 @@ h1 {
     justify-content: center;
     font-size: 3em;
     margin-inline: 1rem;
-    padding-block: 5rem;
+    padding-block-start: 5rem;
+    padding-block-end: 2rem;
     font-weight: 500;
     color: hsl(0, 0%, 100%);
 }
@@ -67,7 +68,7 @@ p {
     text-align: center;
     place-items: start;
     margin-inline: 1rem;
-    padding-block: 10rem;
+    padding-block: 2rem;
 }
 
 .card_container {
@@ -78,6 +79,7 @@ p {
 .card_article {
     position: relative;
     overflow: hidden;
+    padding-block: 1rem;
 }
 
 .card_img {
