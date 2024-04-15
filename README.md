@@ -1,5 +1,5 @@
 # Carolina | Puerto Rico
-
+[![Deploy static content to Pages](https://github.com/BillStewRod/CarolinaPR/actions/workflows/static.yml/badge.svg)](https://github.com/BillStewRod/CarolinaPR/actions/workflows/static.yml)
 Followed a tutorial [Youtube Video](https://youtu.be/Q8BamnhOmWc) by [Bedimcode](https://www.youtube.com/@Bedimcode) this page.
 
 - CSS Card Hover Effects | HTML & CSS
